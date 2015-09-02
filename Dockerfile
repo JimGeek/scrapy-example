@@ -4,7 +4,7 @@ RUN mkdir /code
 WORKDIR /code
 
 # Install required package for ubuntu
-RUN apt-get update && apt-get install -y python-dev libxml2 libxml2-dev libxml2-dev libxslt1-dev python-lxml libf$
+RUN apt-get update && apt-get install -y python-dev libxml2 libxml2-dev libxml2-dev libxslt1-dev python-lxml libffi-dev git python-pip libssl-dev
 
 # Clone the repository
 RUN git clone https://github.com/JimGeek/scrapy-example.git
